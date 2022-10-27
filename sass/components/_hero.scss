@@ -3,11 +3,9 @@
 }
 
 .hero__wraper {
-  max-width: 1600px;
-  height: 600px;
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  max-width: 1600px;
+  height: 400px;
 
   background-image: linear-gradient(
       to bottom,
@@ -17,19 +15,45 @@
     url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+
+    @media screen and (min-width: $desktop) {
+      height: 600px;
+    }
+  }
+
+  // @media screen and (min-width: $tablet) {
+  //   // width: 768px;
+  // }
+
+  @media screen and (min-width: $desktop) {
+    height: 600px;
+
+  }
 }
 
 .hero__title {
-  max-width: 696px;
   margin: 0 auto 30px auto;
+  max-width: 360px;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
 
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: $color-txt-alternative;
+
+  @media screen and (min-width: $desktop) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }

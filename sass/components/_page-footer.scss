@@ -5,7 +5,7 @@
 }
 
 .page-footer__wraper {
-  display: flex;
+  // display: flex;
 }
 
 .page-footer__info {
@@ -86,12 +86,12 @@
 }
 
 .subscribe__box {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 
 .subscribe__email {
-  width: 358px;
+  max-width: 358px;
   height: 50px;
   margin-right: 12px;
 

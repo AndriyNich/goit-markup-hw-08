@@ -1,11 +1,11 @@
 .page-header__wraper {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   border-bottom: 1px solid #ececec;
 }
 
 .nav__list {
-  display: flex;
+  // display: flex;
 }
 
 .nav__item {
@@ -16,7 +16,7 @@
 
 %header-link {
   font-weight: 500;
-//   font-size: 14px;
+  //   font-size: 14px;
   line-height: calc(16px / 14px);
   letter-spacing: 0.02em;
 }
@@ -60,9 +60,9 @@
 }
 
 .page-header__list {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  // display: flex;
+  // align-items: center;
+  // margin-left: auto;
 }
 
 .page-header__item {
@@ -72,8 +72,8 @@
 }
 
 .page-header__link {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 
   padding: 32px 0;
 

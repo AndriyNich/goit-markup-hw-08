@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
 
@@ -12,11 +14,22 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 .title {
