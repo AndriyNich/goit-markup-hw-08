@@ -1,0 +1,35 @@
+.to-do.section {
+  padding-top: 0;
+}
+
+.to-do__list {
+  display: flex;
+  gap: $gap-carts;
+}
+
+.to-do__item {
+  position: relative;
+  width: calc((100% - 2 * $gap-carts) / 3);
+}
+
+.to-do__remark {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 370px;
+  height: 70px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  //   text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $color-txt-alternative;
+
+  background-color: $bg-remark-color;
+}

@@ -1,0 +1,59 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px 22px;
+  min-width: 200px;
+  height: 50px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $color-txt-alternative;
+
+  background-color: $color-accent;
+
+  border: none;
+  border-radius: $btn-radius;
+  box-shadow: $btn-shadow-hero;
+
+  cursor: pointer;
+
+  transition-property: color, background-color, box-shadow;
+  transition-duration: $time-transition;
+  transition-timing-function: $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-color-btn-alternative;
+    box-shadow: $btn-shadow-hero;
+  }
+}
+
+.btn__hero {
+    min-width: 216px;
+}
+
+.btn__portfolio {
+  min-width: 73px;
+  height: 38px;
+
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: $color-txt-title;
+
+  background-color: $bg-color-btn;
+
+  box-shadow: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+    color: $color-txt-alternative;
+    box-shadow: $btn-shadow;
+  }
+}

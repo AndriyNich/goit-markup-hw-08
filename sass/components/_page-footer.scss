@@ -1,0 +1,115 @@
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $bg-color-footer;
+}
+
+.page-footer__wraper {
+  display: flex;
+}
+
+.page-footer__info {
+  width: 231px;
+  margin-right: 70px;
+}
+
+.address {
+}
+
+%text {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address__text {
+  margin-bottom: 9px;
+  @extend %text;
+  color: $color-txt-alternative;
+}
+
+.address__list {
+}
+
+.address__item {
+  & + & {
+    margin-top: 9px;
+  }
+}
+
+.address__link {
+  @extend %text;
+
+  color: $color-link-alternative;
+
+  transition: color $time-transition $cubic;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.page-footer__join {
+  margin-right: 93px;
+  width: 206px;
+  padding-top: 12px;
+}
+
+%footer-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $color-txt-alternative;
+}
+
+.join__title {
+  @extend %footer-title;
+}
+
+.page-footer__subscribe {
+  padding-top: 12px;
+}
+
+.subscribe__title {
+  @extend %footer-title;
+}
+
+.subscribe__form {
+}
+
+.subscribe__box {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe__email {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+
+  padding: 15px 0 15px 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: $color-input-txt;
+  background-color: transparent;
+
+  border: 1px solid $color-border-input;
+  filter: drop-shadow($btn-shadow-hero);
+  border-radius: $btn-radius;
+  outline: none;
+}
+
+.subscribe__icon {
+  margin-left: 10px;
+}

@@ -1,0 +1,51 @@
+$color-accent: #2196f3;
+
+$color-txt-main: #757575;
+$color-txt-title: #212121;
+$color-txt-alternative: #ffffff;
+$color-txt-alternative-invers: #000000;
+
+$color-link-alternative: rgba(255, 255, 255, 0.6);
+
+$color-input-txt: rgba(255, 255, 255, 0.3);
+$color-input-txt-modal: rgba(117, 117, 117, 0.5);
+
+$color-border-input: rgba(255, 255, 255, 0.3);
+
+$bg-color-btn: #f5f4fa;
+$bg-color-btn-alternative:#188ce8;
+$bg-color-hero: #c4c4c4;
+$bg-color-footer: #2f303a;
+$bg-color-team: #f5f4fa;
+
+$bg-color-social-icon: #afb1b8;
+$bg-color-social-icon-footer: rgba(255, 255, 255, 0.1);
+$bg-color-overlay: rgba(33, 150, 243, 0.9);
+
+$bg-gradient-hero: rgba(47, 48, 58, 0.4);
+//$bg-gradient-hero: rgba(85, 86, 102, 0.4);
+$bg-remark-color: rgba(47, 48, 58, 0.8);
+
+$gap-carts: 30px;
+
+$btn-border: 1 solid transparent;
+$border-portfolio: 1px solid #eeeeee;
+
+$border-input: 1px solid rgba(33, 33, 33, 0.2);
+
+$btn-radius: 4px;
+
+$btn-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
+$btn-shadow-hero: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+$shadow-team: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+
+$br-radius-team: 0px 0px 4px 4px;
+
+$shadow-portfolio: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+$time-transition: 250ms;
+$cubic: cubic-bezier(0.4, 0, 0.2, 1);

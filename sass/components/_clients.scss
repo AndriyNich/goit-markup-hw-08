@@ -1,0 +1,33 @@
+.clients__list {
+  display: flex;
+  gap: $gap-carts;
+}
+
+.clients__item {
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 170px;
+  height: 92px;
+
+  color: $bg-color-social-icon;
+  border: 1px solid $bg-color-social-icon;
+  border-radius: $btn-radius;
+
+  transition: color $time-transition $cubic,
+    border-color $time-transition $cubic;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+    border-color: $color-accent;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+}

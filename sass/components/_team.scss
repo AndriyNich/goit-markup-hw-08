@@ -1,0 +1,45 @@
+.team {
+  background-color: $bg-color-btn;
+}
+
+.team__list {
+  display: flex;
+  gap: $gap-carts;
+}
+
+.team__item {
+  width: calc((100% - 3 * $gap-carts) / 4);
+
+  background-color: $color-txt-alternative;
+
+  box-shadow: $shadow-team;
+  border-radius: $br-radius-team;
+}
+
+.team__wrap {
+  padding: 30px 32px;
+}
+
+.team__name {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $color-txt-title;
+}
+
+.team__profession {
+  margin-bottom: 16px;
+  // font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+

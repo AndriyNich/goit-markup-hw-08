@@ -1,0 +1,32 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $color-txt-title;
+}
