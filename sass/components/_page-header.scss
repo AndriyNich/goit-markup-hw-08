@@ -1,7 +1,36 @@
+.page-header {
+  position: relative;
+}
+
 .page-header__wraper {
-  // display: flex;
-  // align-items: center;
+  display: flex;
+  align-items: center;
+  height: 60px;
+
   border-bottom: 1px solid #ececec;
+
+  @media screen and (max-width: calc($tablet - 1px)) {
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $tablet) {
+    height: 80px;
+  }
+}
+
+.menu-burger {
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.page-header__nav {
+  display: none;
+
+  &.is-open {
+    position: absolute;
+    display: block;
+  }
 }
 
 .nav__list {
