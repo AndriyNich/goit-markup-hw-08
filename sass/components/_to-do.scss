@@ -1,6 +1,10 @@
 .to-do.section {
   display: none;
   padding-top: 0;
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .to-do__list {

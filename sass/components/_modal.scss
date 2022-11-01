@@ -27,8 +27,9 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
-  height: 581px;
+  max-width: 450px;
+  // width: 528px;
+  // height: 581px;
 
   padding: 40px;
 
@@ -188,8 +189,12 @@
 .modal__label-checkbox {
   display: flex;
   align-items: center;
-  padding-left: 12px;
-  padding-right: 12px;
+
+  @media screen and (min-width: $desktop) {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
   margin: 0 auto 30px auto;
 
   &:hover {
@@ -246,8 +251,14 @@
 }
 
 .modal__title-checkbox {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.167;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
   letter-spacing: 0.03em;
 
   color: $color-txt-main;

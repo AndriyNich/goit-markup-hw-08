@@ -1,9 +1,19 @@
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   gap: $gap-carts;
 }
 
 .clients__item {
+  width: calc((100% - $gap-carts) / 2);
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - $gap-carts * 2) / 3);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - $gap-carts * 5) / 6);
+  }
 }
 
 .clients__link {
@@ -11,7 +21,6 @@
   align-items: center;
   justify-content: center;
 
-  width: 170px;
   height: 92px;
 
   color: $bg-color-social-icon;
@@ -20,6 +29,8 @@
 
   transition: color $time-transition $cubic,
     border-color $time-transition $cubic;
+
+  // width: 170px;
 
   &:hover,
   &:focus {
