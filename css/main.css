@@ -1057,6 +1057,7 @@ body {
   top: 50%;
   left: 50%;
   max-width: 450px;
+  width: 100%;
   padding: 40px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1068,6 +1069,11 @@ body {
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 
 .modal__close {
@@ -1320,7 +1326,12 @@ body {
 }
 
 .modal-menu {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
   padding: 48px 0 48px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1332,9 +1343,21 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 480px;
   overflow: hidden;
-  height: 100vh;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-menu.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .menu-burger,
@@ -1346,9 +1369,10 @@ body {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-burger:hover, .menu-burger:focus,
+.menu-burger:hover, .menu-burger:focus, .menu-burger:active,
 .modal-menu__btn-close:hover,
-.modal-menu__btn-close:focus {
+.modal-menu__btn-close:focus,
+.modal-menu__btn-close:active {
   color: #2196f3;
 }
 
@@ -1360,7 +1384,7 @@ body {
 .modal-menu__btn-close {
   position: absolute;
   top: 10px;
-  right: 0;
+  right: 15px;
 }
 
 .modal-menu__nav-item:not(:last-child) {
