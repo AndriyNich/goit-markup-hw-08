@@ -1,22 +1,14 @@
 .advantages-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: $gap-carts;
-
-  @media screen and (min-width: $tablet) {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  @media screen and (min-width: $tablet) {
-  }
 }
 
 .advantages-list__item {
-  max-width: $mobile;
+  width: 100%;
 
   @media screen and (min-width: $tablet) {
-    width: calc((100% - 1 * $gap-carts) / 2);
+    width: calc((100% - $gap-carts) / 2);
   }
 
   @media screen and (min-width: $desktop) {
@@ -28,12 +20,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  max-width: $mobile;
-
-  @media screen and (min-width: $desktop) {
-    width: 270px;
-  }
 
   height: 120px;
 
