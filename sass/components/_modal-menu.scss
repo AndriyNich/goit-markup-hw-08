@@ -109,11 +109,19 @@ $vertical-gap: 32px;
 
   color: $color-txt-main;
 
+  @media screen and (max-width: 399px) {
+    font-size: 18px;
+  }
+
   &--big {
     font-size: 34px;
     line-height: 1.18;
     height: 40px;
     color: $color-accent;
+  
+    @media screen and (max-width: 399px) {
+      font-size: 24px;
+    }
   }
 }
 
@@ -145,6 +153,10 @@ $modal-socil-gap: 20px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $color-accent;
+
+  @media screen and (max-width: 399px) {
+    font-size: 12px;
+  }
 
   transition: color $time-transition $cubic;
 

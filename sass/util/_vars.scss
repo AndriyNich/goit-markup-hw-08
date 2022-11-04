@@ -50,6 +50,8 @@ $shadow-portfolio: 0px 1px 1px rgba(0, 0, 0, 0.12),
 $time-transition: 250ms;
 $cubic: cubic-bezier(0.4, 0, 0.2, 1);
 
+$bg-gradient: linear-gradient(to bottom, $bg-gradient-hero, $bg-gradient-hero);
+
 $mobile: 480px;
 $tablet: 768px;
 $desktop: 1200px;
